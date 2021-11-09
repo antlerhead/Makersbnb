@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/app.rb": {
+      "/Users/mia.gordon/Desktop/Makers/Projects/Makers_bnb/Makersbnb/app.rb": {
         "lines": [
           1,
           1,
@@ -18,14 +18,14 @@
           null
         ]
       },
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/database_connection_setup.rb": {
+      "/Users/mia.gordon/Desktop/Makers/Projects/Makers_bnb/Makersbnb/database_connection_setup.rb": {
         "lines": [
           1,
           null,
           1
         ]
       },
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/lib/database_connection.rb": {
+      "/Users/mia.gordon/Desktop/Makers/Projects/Makers_bnb/Makersbnb/lib/database_connection.rb": {
         "lines": [
           1,
           null,
@@ -46,13 +46,15 @@
           null
         ]
       },
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/lib/spaces.rb": {
+      "/Users/mia.gordon/Desktop/Makers/Projects/Makers_bnb/Makersbnb/lib/spaces.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           null,
+          1,
+          1,
           1,
           1,
           1,
@@ -69,7 +71,7 @@
           null
         ]
       },
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/spec/features/view_list_spaces_spec.rb": {
+      "/Users/mia.gordon/Desktop/Makers/Projects/Makers_bnb/Makersbnb/spec/features/view_list_spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -86,6 +88,6 @@
         ]
       }
     },
-    "timestamp": 1636473411
+    "timestamp": 1636474098
   }
 }
