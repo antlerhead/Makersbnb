@@ -6,9 +6,9 @@
 psql
 CREATE DATABASE makersbnb;
 \c makersbnb
-CREATE TABLE spaces (id SERIAL PRIMARY KEY, name VARCHAR(60), description VARCHAR(60), price INTEGER, fromdate DATE, todate DATE, booking INTEGER, host INTEGER);
-CREATE TABLE account (id SERIAL PRIMARY KEY, name VARCHAR(60), login VARCHAR(60), password VARCHAR(60), host BIT, signedin BIT, booking INTEGER);
-CREATE TABLE booking (id SERIAL PRIMARY KEY, space INTEGER, booked_date DATE, resident INTEGER, requested BIT, confirmed BIT);
+CREATE TABLE spaces (id SERIAL PRIMARY KEY, name VARCHAR(60), description VARCHAR(60), price INTEGER, fromdate DATE NOT NULL, todate DATE NOT NULL, booking_id INTEGER, host INTEGER);
+CREATE TABLE account (id SERIAL PRIMARY KEY, name VARCHAR(60), login VARCHAR(60), password VARCHAR(60), host BIT, signedin BIT, booking_id INTEGER);
+CREATE TABLE booking (id SERIAL PRIMARY KEY, space_id INTEGER, booked_date DATE, resident INTEGER, requested BIT, confirmed BIT);
 
 CREATE DATABASE makersbnb_test;
 \c makersbnb_test

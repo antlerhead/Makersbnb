@@ -1,0 +1,60 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/mia.gordon/Desktop/Makers/Projects/Makers_bnb/Makersbnb/app.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/mia.gordon/Desktop/Makers/Projects/Makers_bnb/Makersbnb/database_connection_setup.rb": {
+        "lines": [
+          1,
+          null,
+          1
+        ]
+      },
+      "/Users/mia.gordon/Desktop/Makers/Projects/Makers_bnb/Makersbnb/lib/database_connection.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/mia.gordon/Desktop/Makers/Projects/Makers_bnb/Makersbnb/spec/features/view_list_spaces_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1636457900
+  }
+}

@@ -1,4 +1,9 @@
 User Stories
+
+User(resident)
+So that I can decide what space to book
+I would like to see a list of spaces.
+
 User (host)
 So that other users can see my space
 I want to be able to add my space
