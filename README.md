@@ -51,3 +51,11 @@ I want to be able to sign in/out
 As a user
 So that I can use the app
 I want to be able to sign up/register
+
+
+#Managing different branches
+
+Create new branch -=> git branch [new branch name]
+Switch to new branch =>  git checkout [new branch name]
+
+To push changes from local to remote repo via the new branch => git push -u origin [new branch name]
