@@ -6,7 +6,6 @@ class MakersAirBnB < Sinatra::Base
 
   get '/' do 
     @list = Spaces.all 
-    p @list 
     erb :homepage
   end 
 

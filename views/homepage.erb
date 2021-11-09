@@ -1,1 +1,10 @@
-<h1> <%= @list %> </h1>
+<html>
+<% @list.each do |item|  %> 
+  <p> Name:<%= item.name %> </p>
+  <p> Description:<%= item.description %> </p>
+  <p>Price: £<%= item.price %> </p>
+  <p>Availabe from: <%= item.fromdate%> </p>
+  <p>Availabe to: <%= item.todate %> </p>
+  <% end %>
+
+</html>
