@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/app.rb": {
+      "/Users/dsmythe/Projects/MakersProjects/Makersbnb/app.rb": {
         "lines": [
           1,
           1,
@@ -10,22 +10,32 @@
           1,
           null,
           1,
+          0,
+          0,
+          null,
+          null,
           1,
+          0,
+          null,
+          null,
           1,
+          0,
+          0,
+          null,
           null,
           null,
           1,
           null
         ]
       },
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/database_connection_setup.rb": {
+      "/Users/dsmythe/Projects/MakersProjects/Makersbnb/database_connection_setup.rb": {
         "lines": [
           1,
           null,
           1
         ]
       },
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/lib/database_connection.rb": {
+      "/Users/dsmythe/Projects/MakersProjects/Makersbnb/lib/database_connection.rb": {
         "lines": [
           1,
           null,
@@ -41,12 +51,12 @@
           null,
           null,
           1,
-          1,
+          3,
           null,
           null
         ]
       },
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/lib/spaces.rb": {
+      "/Users/dsmythe/Projects/MakersProjects/Makersbnb/lib/spaces.rb": {
         "lines": [
           1,
           null,
@@ -54,12 +64,22 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
+          2,
           null,
           null,
           null,
+          1,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          1,
           1,
           1,
           1,
@@ -69,16 +89,21 @@
           null
         ]
       },
-      "/Users/neneh.bojang/Desktop/Makers/week7/Makersbnb/spec/features/view_list_spaces_spec.rb": {
+      "/Users/dsmythe/Projects/MakersProjects/Makersbnb/spec/unit/app_spec.rb": {
         "lines": [
           1,
           1,
-          1,
           null,
           1,
           null,
           1,
           null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
           1,
           null,
           null,
@@ -86,6 +111,6 @@
         ]
       }
     },
-    "timestamp": 1636473411
+    "timestamp": 1636546659
   }
 }

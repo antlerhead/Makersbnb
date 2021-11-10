@@ -17,5 +17,13 @@ class Spaces
     result.map do |space|
       Spaces.new(space)
     end
- end 
+  end 
+
+  def self.add(name:, description:, price:, from_date:, to_date:)
+    connection = PG.connect(dbname: 'makersbnb_test')
+    p '+++++'
+    p 'in the add method'
+    connection.exec("INSERT INTO spaces (name, description, price, fromdate, todate) VALUES( '#{name}', '#{description}', '#{price}', '#{from_date}', '#{to_date}') ; ")
+  end
+ 
 end
