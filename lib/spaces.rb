@@ -13,6 +13,11 @@ class Spaces
  
   
   def self.all 
+    if ENV["ENVIRONMENT"] == 'test' 
+      connection = PG.connect(dbname: 'makersbnb_test')
+    else 
+      connection = PG.connect(dbname: 'makersbnb')
+    end 
     result = DatabaseConnection.query('SELECT * FROM spaces;')
     result.map do |space|
       Spaces.new(space)
@@ -20,9 +25,11 @@ class Spaces
   end 
 
   def self.add(name:, description:, price:, from_date:, to_date:)
-    connection = PG.connect(dbname: 'makersbnb_test')
-    p '+++++'
-    p 'in the add method'
+    if ENV["ENVIRONMENT"] == 'test' 
+      connection = PG.connect(dbname: 'makersbnb_test')
+    else 
+      connection = PG.connect(dbname: 'makersbnb')
+    end 
     connection.exec("INSERT INTO spaces (name, description, price, fromdate, todate) VALUES( '#{name}', '#{description}', '#{price}', '#{from_date}', '#{to_date}') ; ")
   end
  
