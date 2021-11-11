@@ -178,6 +178,7 @@ padding:5px;
 </a>
    <li><a href="#home"> Home</a></li>
     <li><a href="#log in">Log in</a></li>
+    <li><a href="/add_list"> Add Space</a>
    <li><a href="#places to stay">Places to stay</a></li>
 </div>
 
@@ -198,9 +199,6 @@ padding:5px;
 <a href="#section-2" class="button"> 
 <h2 class="center">List of spaces</h2> 
 </a> 
-<%# a tag button issue above it shows up on the webpage 
-on the left when you hover over the link %>
-
 <section id="section-2">
 
 <div class="box">
@@ -209,7 +207,7 @@ on the left when you hover over the link %>
 
 
 <% @list.each do |item|  %> 
-<a href="/booking", style="text-decoration:none;" id="item-name">
+<a href="/booking_form", style="text-decoration:none;" id="item-name">
   <p style= "font-size: 20px;">
   <p><img id ="villa" src="https://s3.eu-west-1.amazonaws.com/prod.news.product.which.co.uk/news/wp-content/uploads/2020/08/MAIN-villa-with-pool-abroad-960x480.jpg">
 </p>

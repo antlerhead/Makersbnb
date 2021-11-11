@@ -20,6 +20,9 @@ class MakersAirBnB < Sinatra::Base
 
   post '/add_list' do
     Spaces.add(name: params['name'], description: params['description'], price: params['price'], from_date: params['from_date'], to_date: params['to_date'] )
+    p '+++++++++'
+    p params["from_date"]
+    p '++++++++++++'
     redirect '/'
   end
 
