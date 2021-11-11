@@ -21,9 +21,9 @@ class MakersAirBnB < Sinatra::Base
   post '/add_list' do
     Spaces.add(name: params['name'], description: params['description'], price: params['price'], from_date: params['from_date'], to_date: params['to_date'] )
     p '+++++++++'
-    p params["from_date"]
+    p @from_date = params["from_date"]
     p '++++++++++++'
-    redirect '/'
+    redirect '/booking_form'
   end
 
   post '/booking' do 
@@ -31,5 +31,12 @@ class MakersAirBnB < Sinatra::Base
      redirect '/'
   end 
 
+  get '/booking_form' do 
+  p '_______________'
+  p params["from_date"]
+  p params["to_date"]
+  p '_______________'
+  erb :booking_form
+  end 
   run! if app_file == $0
 end 
