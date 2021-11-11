@@ -26,12 +26,10 @@ html {
 } 
 
 .header {
-  /* font-family:verdana; */
-  padding: 60px;
-  background-color: black;
-  /* font-family: "Courier New"; */
   color: white;
   border-radius: 10px;
+  padding: 60px;
+  background-color: black;
 }
 
 .navigation {
@@ -39,11 +37,10 @@ html {
   margin: 0;
   padding: 15px;
   text-align: right;
-  /* background-color: gainsboro; */
   background-color: white;
   color: black;
   position:fixed;
-  top: 0; /* Position the navbar at the top of the page */
+  top: 0; 
   width: 100%; 
 }
 
@@ -124,10 +121,8 @@ padding:5px;
   justify-content: center;
   margin-right:200px;
   margin-left:200px; 
-  margin-top:600px;
- 
+  margin-top:600px; 
 }
-
 
 </style>
   
@@ -148,48 +143,26 @@ padding:5px;
 <h1 class="header" style="font-size: 50px;">MAKERSBNB</h1>
 <h3>Not sure where to go? Perfect, let us help you.</h3>
 </header>
-
 </div>
-
 </head>
 <div id="wrapper">
 
 <body>
-<a href="#section-2" class="button"> 
-<h2 class="center">List of spaces</h2> 
-</a> 
-<section id="section-2">
-
-<div class="box">
-
-<div class="list">
-
-
+<div style="text-align:center;" >
 <% @list.each do |item|  %> 
-<a href="/booking_form", style="text-decoration:none;" id="item-name">
-  <p style= "font-size: 20px;">
-  <p><img id ="villa" src="https://s3.eu-west-1.amazonaws.com/prod.news.product.which.co.uk/news/wp-content/uploads/2020/08/MAIN-villa-with-pool-abroad-960x480.jpg">
-</p>
-  
-  <%= item.name %></p> 
+<a href="/booking_form?id=<%=item.id%>&name=<%=item.name%>&fromdate=<%=item.fromdate%>&todate=<%=item.todate%>" >
+
+  <p><b>Name:<%= item.name %> </p> 
   <p><b>Description: </b><%= item.description %> </p>
   <p><b>Price per night: </b>£<%= item.price %> </p>
   <p><b>Available from: </b><%= item.fromdate%> </p>
   <p><b>Available to: </b><%= item.todate %> </p>
 </a>
   <% end %>
-  
-</div>
-</div>
-<div>
-
-</div>
-
-</section>
-
-
-
+  </div>
 </body>
+
  </div>
 
 </html>
+

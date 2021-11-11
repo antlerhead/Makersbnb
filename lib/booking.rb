@@ -4,7 +4,7 @@ class Booking
   attr_reader :space_id, :booked_date, :resident, :requested, :confirmed
 
   def initialize(book)
-    @space_id = book['name']
+    @space_id = book['space_id']
     @booked_date = book['booked_date']
     @resident = book['resident']
     @requested = book['requested']
@@ -19,6 +19,7 @@ class Booking
       connection = PG.connect(dbname: 'makersbnb')
     end 
     result = DatabaseConnection.query('SELECT * FROM booking;')
+    p 
     result.map do |book|
       Booking.new(book)
     end
