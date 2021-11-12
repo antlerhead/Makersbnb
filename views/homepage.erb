@@ -88,7 +88,7 @@
         <p><b>Price per night: </b>£<%= item.price %> </p>
         <p><b>Available from: </b><%= item.fromdate%> </p>
         <p><b>Available to: </b><%= item.todate %> </p>
-        <a href="/booking_form" class="btn btn-primary">Book space</a>
+        <a href="/booking_form?id=<%=item.id%>&name=<%=item.name%>&fromdate=<%=item.fromdate%>&todate=<%=item.todate%>" class="btn btn-primary">Book space</a>
         </a>
           </div>
       </div>
