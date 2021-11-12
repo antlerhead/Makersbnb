@@ -1,10 +1,52 @@
-<h1> Welcome to the booking site </h1>
-
-<p>Booking for: <b><%= @space_name %> </p> 
+<html>
+<head>
+<link href=“https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css” rel=“stylesheet” integrity=“sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3” crossorigin=“anonymous”>
+<link href=“https://fonts.googleapis.com/css?family=Open+Sans:400,600,300” rel=“stylesheet” type=“text/css”>
+</head>
+<style>
+* {
+  max-width: 1200px;
+}
+body{
+    margin: auto 0;
+    background-size: cover;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+    }
+.header{
+      border-radius:4px;
+      border:1px solid #bbb;
+      font-family: sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-align: left;
+      margin: 20px;
+      padding: 10px;
+      background-color: black;
+      color: white;
+    }
+.block{
+      border-radius:4px;
+      border:1px solid #bbb;
+      font-family: sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-align: left;
+      margin: 20px;
+      padding: 10px;
+}
+</style>
+<div class=“header”>
+<h1> MAKERSBNB Request Form </h1>
+</div>
+<div class=“block”>
+<p>Request for: <b><%= @space_name %> </p>
 <p>Only available from <%= @from_date %> to <%= @to_date %>
-
-<form action="/booking?id=<%=@space_id%>&name=<%= @space_name %>"  method="post">
-Book a date: <input style="width: 20%;" type="date" name="booked_date" min="<%= @from_date %>" max="<%= @to_date %>"><br><br>
-Click to submit request: <input style="width: 20%;" type="submit">
+<form action=“/booking?id=<%=@space_id%>&name=<%= @space_name %>”  method=“post”>
+Request a date: <input style=“width: 20%;” type=“date” name=“booked_date” min=“<%= @from_date %>” max=“<%= @to_date %>“><br><br>
+Click to submit request: <input style=“width: 20%;” type=“submit”>
 </form>
-
+</div>
+</html>
