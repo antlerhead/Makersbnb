@@ -38,10 +38,13 @@ class MakersAirBnB < Sinatra::Base
   end 
 
   get '/booking_form' do 
-   @space_id = params["id"]
+   
+    p "++++++++++++++"
+    @space_id = params["id"]
    @space_name = params["name"]
    @from_date = params["fromdate"]
    @to_date = params["todate"]
+   p "++++++++++++++"
   erb :booking_form
   end 
 

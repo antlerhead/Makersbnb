@@ -82,8 +82,9 @@
     </div>
 
   <div class="row" id="places to stay">
-    <div class="col-sm-6 mx-auto " ><% @list.each do |item| %>
-      <div class="card mt-3 justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="col-sm-6 mx-auto" >
+    <% @list.each do |item| %>
+      <div class= "card mt-3 justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
         <div class="card-body">
         <a class="text-decoration-none link-dark" href="/booking_form?id=<%=item.id%>&name=<%=item.name%>&fromdate=<%=item.fromdate%>&todate=<%=item.todate%>" >
           <h5 class="card-title"><%= item.name %></h5>
