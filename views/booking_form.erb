@@ -1,3 +1,10 @@
 <h1> Welcome to the booking site </h1>
 
-Book a date: <input style="width: 20%;" type="date" name="booked_date"><br><br>
+<p>Booking for: <b><%= @space_name %> </p> 
+<p>Only available from <%= @from_date %> to <%= @to_date %>
+
+<form action="/booking?id=<%=@space_id%>&name=<%= @space_name %>"  method="post">
+Book a date: <input style="width: 20%;" type="date" name="booked_date" min="<%= @from_date %>" max="<%= @to_date %>"><br><br>
+Click to submit request: <input style="width: 20%;" type="submit">
+</form>
+

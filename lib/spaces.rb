@@ -1,9 +1,10 @@
 require 'pg'
 
 class Spaces
-  attr_reader :name, :description, :price, :fromdate, :todate
+  attr_reader :id, :name, :description, :price, :fromdate, :todate
 
   def initialize(space)
+    @id = space['id']
     @name = space['name']
     @description = space['description']
     @price = space['price']
