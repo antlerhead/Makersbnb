@@ -28,19 +28,18 @@ class MakersAirBnB < Sinatra::Base
   post '/booking' do 
       params["booked_date"]
       Booking.add(space_id: 1, booked_date: params['booked_date'], resident: 20, requested: 1, confirmed: 0 )
-      p @booking = params["booked_date"]
-      @space = params[]
+      @booking = params["booked_date"]
+      @space = params["name"]
      erb :booking
   end 
 
   get '/booking_form' do 
- 
    @space_id = params["id"]
    @space_name = params["name"]
    @from_date = params["fromdate"]
    @to_date = params["todate"]
-
   erb :booking_form
   end 
+
   run! if app_file == $0
 end 

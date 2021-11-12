@@ -1,168 +1,101 @@
 <html>
 
-<head>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
-<link href='open-sans.css' rel='stylesheet' type='text/css'>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
 
-<style type="text/css">
-
- * {
-  max-width:1400px;
-  align: center;
-  font-family: "Open Sans";
-  align-items: center;
-  justify-content: center;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
- #wrapper {
-    margin-left:auto;
-    margin-right:auto;
-    width:1400px;
-
-} 
-
-.header {
-  color: white;
-  border-radius: 10px;
-  padding: 60px;
-  background-color: black;
-}
-
-.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 15px;
-  text-align: right;
-  background-color: white;
-  color: black;
-  position:fixed;
-  top: 0; 
-  width: 100%; 
-}
-
-a:hover {
-  background-color: #ddd;
-  color: Grey;
-
-  -moz-transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-border-radius: 5px;
-}
-
-a:visited {
-  color: none;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  padding: 5px;
-}
-
-li {
-  display: inline;
-}
-
-.center { 
-  text-align: center;
-}
-
-
-.list {
-  margin-right:20px;
-  margin-left:20px;
-  text-align: center;
-  background-color:gainsboro;
-  display: flex;
-  flex-direction: column; 
-}
-
-#makers-logo {
-  float: left;
-  width: 70px;
-  height: 42px;
-  object-fit: contain;
-  margin-left:25px;
-}
-
-#makers-logo:hover
-    {
-      -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc;
-      border-radius: 10px;
+    <style>
+    
+    body{
+      background-color: white;
+      margin: auto 0;
+      background-image: url('https://image.shutterstock.com/image-photo/luxury-travel-romantic-beach-getaway-260nw-1353370091.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
     }
+    nav{
+      color: #fff;
+    }
+    .about-section{
+      border-radius:4px;
+      border:1px solid #bbb;
+      font-family: sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-align: center;
+      margin: 20px;
+    }
+    body {
+  margin: 40px;
+  }
 
-img {
-float: right;
-width: 170px;
-height: 170px;
-margin-left: 5px;
-}
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+  }
 
-#villa {
-border-radius: 30%;
-margin-right: 10px;
-padding:5px;
-}
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+   }
+  .header {
+    color: #fff;
+  }
 
-.box {
-  width: 1000px;
-  height: 100px; /*100 if column 200 if other*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right:200px;
-  margin-left:200px; 
-  margin-top:600px; 
-}
+   </style>
+  </head>
+  <body>
 
-</style>
-  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#log in">Log in</a>
+            <a class="nav-link" href="/add_list"> Add Space</a>
+            <a class="nav-link " href="#places to stay">Places to stay</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+      
+    <div class="about-section" id="about" class="center" style="text-align:center;>
+      <header class= "header">
+      <h1 class="header" style="font-size: 50px;">MAKERSBNB</h1>
+      <h3 class="header" >Not sure where to go? Perfect, let us help you.</h3>
+      <img src="https://s3.eu-west-1.amazonaws.com/prod.news.product.which.co.uk/news/wp-content/uploads/2020/08/MAIN-villa-with-pool-abroad-960x480.jpg" class="card-img-top">
+      </header>
+    </div>
 
-<div class="center">
-
-<div class="navigation">
-<a href="/">
-<img id="makers-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgM6d4_GlTtT5mk3Sosop5qq_k-oCMs4yj3_nXpJZhI5mqyvM_6zNWoCfe4_f7mFnLOqo&usqp=CAU"/>
-</a>
-   <li><a href="#home"> Home</a></li>
-    <li><a href="#log in">Log in</a></li>
-    <li><a href="/add_list"> Add Space</a>
-   <li><a href="#places to stay">Places to stay</a></li>
-</div>
-
-<header class= "header">
-<h1 class="header" style="font-size: 50px;">MAKERSBNB</h1>
-<h3>Not sure where to go? Perfect, let us help you.</h3>
-</header>
-</div>
-</head>
-<div id="wrapper">
-
-<body>
-<div style="text-align:center;" >
-<% @list.each do |item|  %> 
-<a href="/booking_form?id=<%=item.id%>&name=<%=item.name%>&fromdate=<%=item.fromdate%>&todate=<%=item.todate%>" >
-
-  <p><b>Name:<%= item.name %> </p> 
-  <p><b>Description: </b><%= item.description %> </p>
-  <p><b>Price per night: </b>£<%= item.price %> </p>
-  <p><b>Available from: </b><%= item.fromdate%> </p>
-  <p><b>Available to: </b><%= item.todate %> </p>
-</a>
-  <% end %>
+  <div class="row">
+    <div class="col-sm-6 mx-auto " ><% @list.each do |item| %>
+      <div class="card mt-3 justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+        <a class="text-decoration-none link-dark" href="/booking_form?id=<%=item.id%>&name=<%=item.name%>&fromdate=<%=item.fromdate%>&todate=<%=item.todate%>" >
+          <h5 class="card-title"><%= item.name %></h5>
+          <p><b>Description: </b><%= item.description %> </p>
+        <p><b>Price per night: </b>£<%= item.price %> </p>
+        <p><b>Available from: </b><%= item.fromdate%> </p>
+        <p><b>Available to: </b><%= item.todate %> </p>
+        <a href="/booking_form" class="btn btn-primary">Book space</a>
+        </a>
+          </div>
+      </div>
+      <% end %>
+    </div>
   </div>
 </body>
-
- </div>
 
 </html>
 
