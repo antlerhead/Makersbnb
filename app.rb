@@ -1,10 +1,14 @@
 require 'sinatra/base'
+require 'sinatra/flash'
+require 'uri'
 require './database_connection_setup'
 require './lib/spaces'
 require './lib/booking'
+require './lib/account'
 
 class MakersAirBnB < Sinatra::Base 
-
+  enable :sessions, :method_override
+  register Sinatra::Flash
   
   get '/' do 
     @list = Spaces.all 
@@ -40,6 +44,40 @@ class MakersAirBnB < Sinatra::Base
    @to_date = params["todate"]
   erb :booking_form
   end 
+
+
+  get '/signup' do
+    erb :login_page
+  end
+
+  get '/login' do
+    erb :sign_in
+  end
+
+  post '/user_account' do
+    user = Account.create(login: params['login'], password: params['password'])
+    session[:user_id] = user.id
+    redirect '/'
+  end
+
+  post '/sessions' do
+    user = Account.authenticate(login: params[:login], password: params[:password])
+    if user
+      session[:user_id] = user.id
+      redirect('/')
+    else
+      flash[:notice] = 'Please check your email or password.'
+      redirect('login')
+    end
+  end
+
+  post '/sessions/destroy' do
+    session.clear
+    flash[:notice] = 'You have signed out.'
+    redirect('/login')
+  end
+
+
 
   run! if app_file == $0
 end 

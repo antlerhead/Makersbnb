@@ -20,4 +20,6 @@ gem "capybara"
 gem "sinatra-reloader"
 
 gem "webrick"
+gem "bcrypt"
+gem "sinatra-flash"
 

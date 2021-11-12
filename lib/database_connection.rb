@@ -11,7 +11,7 @@ class DatabaseConnection
       end
   end
 
-  def self.query(sql)
-    @connection.exec(sql)
+  def self.query(sql, params = [])
+    @connection.exec_params(sql, params)
   end
 end 
