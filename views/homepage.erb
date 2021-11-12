@@ -62,15 +62,18 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#log in">Log in</a>
+            <a class="nav-link" href="/login">Log in</a>
             <a class="nav-link" href="/add_list"> Add Space</a>
             <a class="nav-link " href="#places to stay">Places to stay</a>
-          </div>
+            <form action="/sessions/destroy" method="post">
+            <input type="submit" value="Sign out" />
+            </form>
+            </div>
         </div>
       </div>
     </nav>
       
-    <div class="about-section" id="about" class="center" style="text-align:center;>
+    <div class="about-section" id="about" class="center" style="text-align:center";>
       <header class= "header">
       <h1 class="header" style="font-size: 50px;">MAKERSBNB</h1>
       <h3 class="header" >Not sure where to go? Perfect, let us help you.</h3>
@@ -78,7 +81,7 @@
       </header>
     </div>
 
-  <div class="row">
+  <div class="row" id="places to stay">
     <div class="col-sm-6 mx-auto " ><% @list.each do |item| %>
       <div class="card mt-3 justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
         <div class="card-body">
