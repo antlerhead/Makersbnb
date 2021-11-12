@@ -2,12 +2,11 @@ feature 'Add new booking' do
   scenario 'user can add a new booking' do
     connection = PG.connect(dbname: 'makersbnb_test')
     visit ('/')
+    find('button').click
+    visit ('/booking_form')
+    fill_in('date_pick', with: "2021-11-24")
     click_button
-    
-    fill_in with: "2021-12-31"
-   
-    # fill_in 'to_date', with: "2021-12-31"
-    click_button("Submit Query") 
-    expect(page).to have_content "Monsters Inc"
+    expect(page).to have_content "2021-11-24"
   end
 end
+
